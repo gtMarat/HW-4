@@ -79,7 +79,7 @@ public class Main {
         if (human <= 60) {
             System.out.println("В вагоне есть сидячие " + (60 - human) + " мест и осталось еще 42 стоячих места");
         }
-        if (human > 60 && human <= 102) {
+        else if (human > 60 && human <= 102) {
             System.out.println("В вагоне поезда закончились сидячие места,  остались только стоячие " + (102 - human) + " места");
         } else {
             System.out.println("Вагон полностью забит, перепонено на " + -(102 - human) + " человек ");
@@ -88,15 +88,18 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        int one = 45;
-        int two = 40;
-        int three = 25;
-        if (one < two) {
-            if (one > three) {
-                System.out.println("Максимальное число " + two);
-            } else if (two <= three) {
-                System.out.println("Маскимальное число " + three);
-            }
+        int one = 345;
+        int two = 255;
+        int three = 15;
+        if (one>=two && one>three) {
+            System.out.println("Число "+ one+" большее из чисел");
+        } else if (two>=one && two>three){
+            System.out.println("число "+ two+" большее из чисел");
+            } else if(three>=one && three>two) {
+            System.out.println("Число "+ three+" большее из чисел");
+        } else {
+            System.out.println("Все 3 числа равны "+ one);
         }
     }
 }
+
